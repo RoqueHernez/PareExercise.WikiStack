@@ -7,6 +7,7 @@ router.get('/', (req, res, next) => {
   res.send('got to GET /wiki');
 });
 
+
 router.post('/', async (req, res, next) => {
 
   try {
@@ -28,4 +29,15 @@ router.get('/add', (req, res, next) => {
   res.send(data);
 });
 
+router.get('/:slug', async (req, res, next) => {
+  try{
+    const page = await Page.findOne({where: {
+      slug: req.params.slug
+    }});
+res.json(page)
+// console.log(users.every(user => user instanceof User)); // true
+// console.log("All users:", JSON.stringify(users, null, 2));
+  }
+  catch(error){next(error)}
+});
 module.exports = router;

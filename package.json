@@ -1,7 +1,6 @@
 {
   "name": "wikistack",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +15,15 @@
     "morgan": "^1.10.0",
     "pg": "^8.8.0",
     "sequelize": "^6.23.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoqueHernez/PareExercise.WikiStack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RoqueHernez/PareExercise.WikiStack/issues"
+  },
+  "homepage": "https://github.com/RoqueHernez/PareExercise.WikiStack#readme",
+  "description": ""
 }
